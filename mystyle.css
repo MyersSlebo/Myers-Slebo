@@ -29,11 +29,6 @@ header::after {
   clear: both;
 }
 
-.logo {
-  float: left;
-  padding: 10px 0;
-}
-
 nav {
   float: right;
 }
@@ -106,8 +101,8 @@ h4 {
 	height: auto;
 }
 section {
+ background-color: black;
 
-=======
 }
 
 nav a:hover::before {
@@ -135,10 +130,48 @@ h4 {
 }
 
 .responsive {
-	width: 40%;
+	width: 30%;
 	height: auto;
 }
-section {
-    
->>>>>>> Stashed changes
+img {
+	width: 20%;
+	height: 30%;
+}
+main {
+	background-color: black;
+}
+* {
+	margin: 6px;
+	padding: 3px;
+}
+.grid {
+	display: grid;
+	grid-template-columns: 1fr ;
+  grid-template-rows: 1fr ;
+	grid-template-areas:
+	" section1 section1 "
+	" section2 section2 "
+	" section3 section3 "
+	" section4 section4 "
+	" section5 section5 ";
+}
+.section1 {
+grid-area: section1;
+background-color: #006666;
+}
+.section2  {
+grid-area: section2;
+background-color: #006666;
+}
+.section3  {
+grid-area: section3;
+background-color: #006666;
+}
+.section4  {
+grid-area: section4;
+background-color: #006666;
+}
+.section5  {
+grid-area: section5;
+background-color: #006666;
 }
