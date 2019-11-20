@@ -3,15 +3,6 @@ body {
 	background: #222;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 500;
-<<<<<<< Updated upstream
-
-
-    width: 100%;
-    height: 50vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 30vh
-
 }
 
 .container {
@@ -144,15 +135,16 @@ main {
 	padding: 3px;
 }
 .grid {
-	display: grid;
-	grid-template-columns: 1fr ;
+	display: grid  75%;
+	grid-template-columns: 1fr 1fr ;
   grid-template-rows: 1fr ;
 	grid-template-areas:
-	" section1 section1 "
-	" section2 section2 "
-	" section3 section3 "
-	" section4 section4 "
-	" section5 section5 ";
+	" section1 section1 section1 "
+	" section2 section2 section2 "
+	" section3 section3 section3 "
+	" section4 section4 section4 "
+	" section5 section5 section5 "
+	" footer footer footer ";
 }
 .section1 {
 grid-area: section1;
@@ -173,4 +165,8 @@ background-color: #006666;
 .section5  {
 grid-area: section5;
 background-color: #006666;
+}
+.footer {
+	grid-area: footer;
+	background-color: #006666;
 }
