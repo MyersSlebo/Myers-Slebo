@@ -7,7 +7,8 @@ body {
     height: 50vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 30vh
+    grid-template-rows: 1fr 1fr 30vh;
+		grid-area: boy;
 }
 
 .container {
@@ -17,6 +18,7 @@ body {
 
 header {
   background: #55d6aa;
+	grid-area: herder;
 }
 
 header::after {
@@ -77,7 +79,7 @@ nav a:hover::before {
 }
 section {
  background-color: black;
-
+grid-area: section;
 }
 
 p {
@@ -110,6 +112,7 @@ img {
 }
 main {
 	background-color: black;
+
 }
 * {
 	margin: 6px;
@@ -150,4 +153,9 @@ background-color: #006666;
 .footer {
 	grid-area: footer;
 	background-color: #006666;
+}
+@media (min-width: 600px;){
+	{
+	 font-size: 1.75rem;
+ }
 }
