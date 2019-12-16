@@ -65,11 +65,9 @@ nav a:hover {
   display: block;
   height: 5px;
   background-color: #444;
-
   position: absolute;
   top: 0;
   width: 0%;
-
   transition: all ease-in-out 250ms;
 } */
 
@@ -161,8 +159,15 @@ background-color: #006666;
 	grid-area: footer;
 	background-color: #006666;
 }
-@media screen and (max-width: 600px){
 
+.section5 iframe {
+	width: 100%;
+}
+@media screen and (max-width: 600px){
+	p {
+		font-size: 1.75rem;
+		line-height: 1.2;
+	}
 
 
 }
