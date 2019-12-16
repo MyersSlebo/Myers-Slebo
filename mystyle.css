@@ -3,12 +3,16 @@ body {
 	background: #222;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 500;
-    width: 100%;
-    height: 50vh;
+    width: 100vw;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 30vh;
-		grid-area: boy;
+    grid-template-rows: 200px 1fr 30vh;
+		grid-template-areas:
+		"header"
+		"main"
+		"footer";
+
 }
 
 .container {
@@ -18,7 +22,7 @@ body {
 
 header {
   background: #55d6aa;
-	grid-area: herder;
+	grid-area: header;
 }
 
 header::after {
@@ -56,7 +60,7 @@ nav a:hover {
   color: #000;
 }
 
-nav a::before {
+/* nav a::before {
   content: '';
   display: block;
   height: 5px;
@@ -67,7 +71,7 @@ nav a::before {
   width: 0%;
 
   transition: all ease-in-out 250ms;
-}
+} */
 
 nav a:hover::before {
   width: 100%;
@@ -112,6 +116,7 @@ img {
 }
 main {
 	background-color: black;
+	grid-area: main;
 
 }
 * {
@@ -119,16 +124,18 @@ main {
 	padding: 3px;
 }
 .grid {
-	display: grid  75%;
-	grid-template-columns: 1fr 1fr ;
-  grid-template-rows: 1fr ;
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-areas:
-	" section1 section1 section1 "
-	" section2 section2 section2 "
-	" section3 section3 section3 "
-	" section4 section4 section4 "
-	" section5 section5 section5 "
-	" footer footer footer ";
+	" section1 section1 "
+	" section2 section2 "
+	" section3 section3 "
+	" section4 section4 "
+	" section5 section5 "
+
+
 }
 .section1 {
 grid-area: section1;
@@ -154,8 +161,8 @@ background-color: #006666;
 	grid-area: footer;
 	background-color: #006666;
 }
-@media (min-width: 600px;){
-	{
-	 font-size: 1.75rem;
- }
+@media screen and (max-width: 600px){
+
+
+
 }
